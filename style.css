@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.card{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.top-card{
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+    background: white;
+    transition: 0.4s;
+}
+.top-card  h2{
+    height: 50px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Lato;
+    letter-spacing: 3px;
+}
+.button{
+    
+    position: relative;
+    background: linear-gradient(285deg, #fbd3e9, #bb377d, red);
+    text-align: center;
+    width: 100%;
+    height:650px;
+    overflow: hidden;
+    transition: 1s;
+}
+.top-card i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.top-card i:hover{
+    font-size: 14rem;
+    opacity: 1;
+}
+
+.bottom-card{
+    height: 700px;
+    transition: 0.4s;
+}
+
+.items, .actualItems{
+   background: white; 
+   display: block;
+   height: 350px;
+   width: 100%;
+   color: black;
+   
+}
+
+
+.items{
+    width: 100%;
+    background-image: url("todo.jpg");
+    background-size: cover;
+    background-position: center;
+   position: relative;
+}
+
+
+.budget{
+    font-family:'Cantarell' ;
+}
+.budget__title{
+    padding-top: 6px;
+    font-size: 1.3em;
+    font-family: 'Rubik';
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    transform: translate(-40%, 0);
+}
+
+.budget__title--month{
+    color: rgb(3, 10, 12);
+    background: rgba(255, 255, 255, 0.438);
+    font-weight: bolder;
+}
+.budget__value{
+    background: rgba(0, 0, 0, 0.678);
+    padding: 3px 10px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.8em;
+}
+
+.budget__income{
+    padding-left: 20px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, 0);
+    background: rgb(25, 133, 184);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.budget__expenses{
+    padding-left: 20px;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+    background: rgb(25, 184, 158);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.budget__expenses--percentage{
+    background: rgba(255, 255, 255, 0.267);
+    width: 40px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.task{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background:white;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid green;
+    position: absolute;
+  
+   bottom: 0;
+}
+
+.plusorminus, .description, .value, .tick{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    background: white;
+    outline: none;
+    border: 1px solid black;
+    padding: 2px;
+    font-size: 17px;
+    color: black;
+}
+
+.description{
+    width: 400px;
+    
+}
+
+.value{
+    width: 70px;
+}
+
+.tick{
+    cursor: pointer;
+    transition: 0.8s;
+    background: rgb(247, 116, 149);
+    border-radius: 50%;
+}
+.tick:hover{
+    opacity: 0.6;
+}
+.actualItems{
+    font-family:'Cantarell'; 
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    width: 800px;
+    
+    
+}
+
+.income, .expenses{
+    text-align: center;
+    width: 399px;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.income{
+    margin-right: 5px;
+    color: green;
+}
+
+.expenses{
+    color: red;
+}
+
+.income__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(238, 227, 82, 0.938);
+    color: black;
+    margin-bottom: 3px;
+    height: 40px;
+    padding: 4px;
+}
+
+.expenses .item{
+    background: rgba(240, 74, 74, 0.692);
+    font-style: italic;
+}
+
+
+.dlt-btn{
+    transition: 0.8s;
+    cursor: pointer;
+}
+.dlt-btn:hover{
+    opacity: 0.5;
+}
